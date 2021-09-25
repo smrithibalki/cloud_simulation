@@ -5,12 +5,9 @@ This homework focuses on creating different simulations using Cloud Sim Plus. Ex
 All the simulations are written in Scala, can be compiled using SBT
 ## Installation and Run Instructions
 Follow the steps to run the simulations 
-1) Open IntellJ IDEA, in the  welcome screen select “Check out from Version Control” and then “Git”.
-2) Enter the following URL and click “Clone”: https://sbalki3@bitbucket.org/sbalki3/cs441_hw1.git
-3) When prompted click “Yes” in the dialog box
-4) The SBT import screen will appear, so proceed with the default options and click on “OK”
-5) Confirm overwriting with “Yes”
-6) Please go to src/main/scala/simulations and start running the simulation of your choice. An IntelliJ run configuration is auto-created when you click the green arrow next to the main method of the simulation file you want to run.
+- Clone using "https://github.com/smrithibalki/cloud_simulation.git"
+- Open using IntelliJ IDEA 
+- Please go to src/main/scala/simulations and start running the simulation of your choice. An IntelliJ run configuration is auto-created when you click the green arrow next to the main method of the simulation file you want to run.
 ###Note to run service_simulation.scala
 To run the "service_simulation" => for SaaS - change the  service tag to "SaaS" in service_simulation.conf file.Similarly , for PaaS and IaaS.
 
@@ -77,8 +74,8 @@ You will see that Cloudlet ID - 12,13,14 are allocated to second data center
                                             
                                                                         SIMULATION_1 RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        8| 0|        2|       1000|          2|        0|         1|       1|           1.00|     10.00
        3|SUCCESS| 2|   0|        8| 3|        2|       1000|          2|        0|         1|       1|           1.00|     10.00
@@ -132,8 +129,8 @@ Results  obtained from ClouldletSpaceShared and VmTimeShared schedulers
                                                                            SIMULATION_2 RESULTS
 
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        8| 0|        2|       1000|          2|        0|         1|       1|           1.00|      3.00
        1|SUCCESS| 2|   0|        8| 1|        2|       1000|          2|        0|         1|       1|           1.00|      3.00
@@ -181,8 +178,8 @@ This Simulation is to experiment on cloudlet lengths , Simulation_3 takes single
         
                                                                SIMULATION_3 RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        6| 0|        1|       1000|          1|        0|         1|       1|           1.34|      4.03
        5|SUCCESS| 2|   0|        6| 5|        1|       1000|          1|        0|         1|       1|           1.34|      4.03
@@ -218,8 +215,8 @@ ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   S
 
                                                        HORIZONTAL_VM_SCALING RESULTS
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        6| 0|        1|       2000|          1|        0|         4|       4|           4.01|     12.03
        7|SUCCESS| 2|   2|        6| 7|        1|       2000|          1|        0|         4|       4|           4.01|     12.03
@@ -270,8 +267,8 @@ This Simulation is to experiment on scaling policy with array of clouldlet lengt
 
               VERTICAL_VM_SCALING
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        6| 0|        1|       2000|          1|        0|         4|       4|           4.01|     12.03
        7|SUCCESS| 2|   1|        6| 7|        1|       2000|          1|        0|         4|       4|           4.01|     12.03
@@ -335,8 +332,8 @@ There is a service tag in "service_simulation.conf" where the tag value should b
 #### RESULTS
                                                     **SIMULATION RESULTS -SAAS**
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        2| 0|        2|       2000|          4|        0|         2|       2|           1.71|      8.55
        1|SUCCESS| 2|   1|        2| 1|        2|       2000|          4|        0|         2|       2|           1.71|      8.55
@@ -358,8 +355,8 @@ ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   S
   
                                             **SIMULATION RESULTS -PAAS**
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        2| 0|        2|        800|          4|        0|         1|       1|           0.75|      7.50
        1|SUCCESS| 2|   1|        2| 1|        2|        800|          4|        0|         1|       1|           0.75|      7.50
@@ -380,8 +377,8 @@ ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   S
                                           **SIMULATION RESULTS - IAAS**
 
 
-Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
-ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
+    Cloudlet|Status |DC|Host|Host PEs |VM|VM PEs   |CloudletLen|CloudletPEs|StartTime|FinishTime|ExecTime|Actual CPU Time|Total Cost
+    ID|       |ID|  ID|CPU cores|ID|CPU cores|         MI|  CPU cores|  Seconds|   Seconds| Seconds|               |
 --------------------------------------------------------------------------------------------------------------------------------
        0|SUCCESS| 2|   0|        2| 0|        2|       4000|          2|        0|         3|       3|           3.31|     49.65
       15|SUCCESS| 2|   0|        2| 0|        2|       4000|          2|        0|         3|       3|           3.31|     49.65
