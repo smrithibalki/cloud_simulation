@@ -27,7 +27,8 @@ The following Simulation classes written in Scala using Cloud Sim Plus Framework
 - service_simulation : Simulation implementing SaaS, PaaS, IaaS
 
 In detail explaination on these simulations will be given below 
-
+### Documentation
+Once you clone the project you will be able to find the Scaladoc documentation in the docs folder 
 ### Resources (src/main/resources)
 This directory contains the different configuration files used for all the created simulations.
 
